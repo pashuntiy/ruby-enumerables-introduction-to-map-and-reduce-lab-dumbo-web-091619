@@ -11,3 +11,7 @@ end
 def map_to_double(source_array)
    source_array.map() {|i| i * 2}
 end
+
+def map_to_double(source_array)
+   source_array.map() {|i| i * 2}
+end
