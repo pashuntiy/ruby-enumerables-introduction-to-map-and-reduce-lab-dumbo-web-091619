@@ -20,3 +20,20 @@ def reduce_to_total(source_array, starting_point = 0)
     source_array.reduce(starting_point) { |total, num| total + num}
 end
 
+def reduce_to_all_true(source_array) 
+    source_array.each do |n|
+    if !n 
+      return false
+    end
+  end
+  return true
+end
+
+def reduce_to_any_true(source_array)
+    source_array.each do |n|
+      if !!n == true
+        return true
+      end
+    end  
+    return false
+end 
